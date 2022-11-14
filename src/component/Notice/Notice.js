@@ -2,7 +2,7 @@ import React from 'react'
 
 function Notice() {
   return (
-    <div>Notice</div>
+    <div>공지사항은 입양시 주의사항을 적으면 될것같습니다.</div>
   )
 }
 

@@ -8,7 +8,7 @@ const mainUrl = `http://api.visitjeju.net/vsjApi/contents/searchList?apiKey=sbrr
 
 
 function Main() {
-
+    // 테스트 데이터 정의
     const [mainData,setMainData] =useState([]);
 
     useEffect(()=>{
@@ -30,6 +30,7 @@ function Main() {
         <MainTitleContainer>
             키워주개
         </MainTitleContainer>
+
         <MainRadioBoxContainer>
         <MainRadioBoxLabel>
         <input type="radio" name="contact" value="dog" checked />

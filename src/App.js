@@ -7,6 +7,10 @@ import Login from './component/Login/Login';
 import Upload from './component/Upload/Upload';
 import Review from './component/Review/Review';
 import Notice from './component/Notice/Notice';
+import UploadDetail from './component/Upload/UploadDetail';
+import SearchPet from './component/SearchPet/SearchPet';
+import MyPage from './component/MyPage/MyPage';
+import FindUser from './component/Login/FindUser';
 import {Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -20,6 +24,10 @@ function App() {
         <Route path="/upload"element={<Upload></Upload>}></Route>
         <Route path="/review"element={<Review></Review>}></Route>
         <Route path="/notice"element={<Notice></Notice>}></Route>
+        <Route path="/uploaddetail:id"element={<UploadDetail></UploadDetail>}></Route>
+        <Route path="/searchpet"element={<SearchPet></SearchPet>}></Route>
+        <Route path="/mypage"element={<MyPage></MyPage>}></Route>
+        <Route path="/finduser"element={<FindUser></FindUser>}></Route>
       </Routes>
    
     </div>

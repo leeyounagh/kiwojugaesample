@@ -4,8 +4,9 @@ import styled from 'styled-components';
 
 const MenuItems = [
   {"title":"Home","param":"/"},  {"title":"Register","param":"/register"}, 
-  {"title":"Login","param":"/login"}, {"title":"Upload","param":"/upload"},
-  {"title":"입양후기","param":"/review"}, {"title":"공지사항","param":"/notice"}
+  {"title":"Login","param":"/login"}, {"title":"입양등록","param":"/upload"},
+  {"title":"입양후기","param":"/review"}, {"title":"입양신청","param":"/searchpet"},
+  {"title":"공지사항","param":"/notice"}, {"title":"MyPage","param":"/mypage"}
 ]
 
 function NavBar() {
