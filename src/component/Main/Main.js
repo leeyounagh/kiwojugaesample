@@ -51,7 +51,7 @@ function Main() {
             mainData.map((item,index)=>{
                 return(
                     <>
-                    <img alt={item.title}src={item.repPhoto.photoid.thumbnailpath} 
+                    <img key={index} alt={item.title}src={item.repPhoto.photoid.thumbnailpath} 
                       width="300px" height="300px" style={{marginRight:"30px"}}></img>
                   
                     </>
