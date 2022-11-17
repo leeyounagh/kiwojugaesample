@@ -51,6 +51,7 @@ const MyPageMainDiv = styled.div`
   margin-left: 10vw;
   background: #fcfcfc;
   display: flex;
+  font-family: "GangwonEduPowerExtraBoldA";
 `;
 
 export default MyPage;

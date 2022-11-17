@@ -56,6 +56,7 @@ const NoticeContainer = styled.div`
   height: 90vh;
   padding-top: 50px;
   margin-bottom: 80px;
+  font-family: "GangwonEduPowerExtraBoldA";
 `;
 const NoticeCatDiv = styled.div`
   opacity: 0.6;

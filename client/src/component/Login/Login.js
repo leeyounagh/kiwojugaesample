@@ -71,6 +71,7 @@ const LoginContainer = styled.div`
   background-color: #bee9b4;
   height: 60vh;
   margin-left: 18vw;
+  font-family: "GangwonEduPowerExtraBoldA";
 `;
 const SnsTextDiv = styled.div`
   display: flex;
@@ -125,7 +126,8 @@ const LoginButton = styled.button`
   border-radius: 30px;
   text-transform: uppercase;
   latter-spacing: 4px;
-  font-family: sans-serif;
+  padding-top: 1vh;
+  font-family: "GangwonEduPowerExtraBoldA";
   text-align: center;
   font-size: 15px;
 
@@ -148,6 +150,8 @@ const RegisterButton = styled.button`
   border-radius: 50px;
   margin-top: 2vh;
   margin-left: 1vw;
+  font-family: "GangwonEduPowerExtraBoldA";
+  padding-top: 1vh;
   &:focus {
     outline: none;
   }
