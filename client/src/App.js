@@ -11,6 +11,8 @@ import SearchPet from "./component/SearchPet/SearchPet";
 import MyPage from "./component/MyPage/MyPage";
 import FindUser from "./component/Login/FindUser";
 import FindPassword from "./component/Login/FindPassword";
+import Community from "./component/Community/Community";
+
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
           path="/findpassword"
           element={<FindPassword></FindPassword>}
         ></Route>
+        <Route path="/community" element={<Community></Community>}></Route>
       </Routes>
     </div>
   );
