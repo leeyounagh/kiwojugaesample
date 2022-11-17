@@ -56,7 +56,7 @@ const NoticeContainer = styled.div`
 const NoticeDescTitle = styled.div`
   width: 60%;
   height: 5vh;
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 1.3rem;
   margin-left: 3vw;
   font-weight: 600;
