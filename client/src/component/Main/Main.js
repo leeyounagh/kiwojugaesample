@@ -78,8 +78,8 @@ function Main() {
                 key={index}
                 alt={item.title}
                 src={item.repPhoto.photoid.thumbnailpath}
-                width="300px"
-                height="300px"
+                width="290px"
+                height="290px"
                 style={{ marginRight: "30px" }}
               ></img>
             </>
@@ -101,14 +101,13 @@ const MainSearchInput = styled.input`
 const RadioinnerDiv = styled.div`
   display: flex;
 `;
-const RadioDiv = styled.div``;
+const RadioDiv = styled.div`
+  width: 16vw;
+`;
 const MainRadioSpan = styled.span`
   font-size: 1.2rem;
 `;
-const UploadedAnimalRadioDiv = styled.input`
-  display: inline-flex;
-  align-items: center;
-`;
+const UploadedAnimalRadioDiv = styled.input``;
 const MainCarouselImgDiv = styled.div`
   img {
     width: 80vw;
