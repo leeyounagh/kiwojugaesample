@@ -39,6 +39,9 @@ function Notice() {
         다르니 해당 지자체 반려동물과 혹은 축산과 홈페이지에서 확인해 보는 것을
         추천합니다.
       </NoticeDescText>
+      <NoticeCatDiv>
+        <img src="안녕고양이.png" alt="공지사항고양이"></img>
+      </NoticeCatDiv>
     </NoticeContainer>
   );
 }
@@ -53,6 +56,15 @@ const NoticeContainer = styled.div`
   height: 90vh;
   padding-top: 50px;
 `;
+const NoticeCatDiv = styled.div`
+  opacity: 0.6;
+  position: absolute;
+  top: 28vh;
+  left: 42vw;
+  img {
+    z-index: 1;
+  }
+`;
 const NoticeDescTitle = styled.div`
   width: 60%;
   height: 5vh;
@@ -64,9 +76,12 @@ const NoticeDescTitle = styled.div`
 const NoticeDescText = styled.div`
   display: flex;
   justify-content: center;
+  position: relative;
   width: 90%;
   margin-left: 3vw;
   font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 100;
 `;
 const NoticeTitleText = styled.div`
   display: flex;
