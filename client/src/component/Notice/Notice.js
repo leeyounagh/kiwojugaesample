@@ -48,13 +48,14 @@ function Notice() {
 
 const NoticeContainer = styled.div`
   background-color: #bee9b4;
-  margin-top: 30px;
+  margin-top: 50px;
   position: relative;
   left: 15vw;
   border-radius: 10px;
   width: 70vw;
   height: 90vh;
   padding-top: 50px;
+  margin-bottom: 80px;
 `;
 const NoticeCatDiv = styled.div`
   opacity: 0.6;
