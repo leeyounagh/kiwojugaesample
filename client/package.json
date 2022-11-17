@@ -15,7 +15,8 @@
     "sass": "^1.56.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4",
-    "antd": "^4.20.3"
+    "antd": "^4.20.3",
+    "react-slick": "^0.15.4"
   },
   "scripts": {
     "start": "react-scripts start",
