@@ -44,6 +44,31 @@ function Main() {
           </MainCarouselImgDiv>
         </Slider>
       </MainCarouselDiv>
+      <MainSearchDiv>
+        <RadioinnerDiv>
+          <RadioDiv>
+            <UploadedAnimalRadioDiv
+              type="radio"
+              name="contact"
+              value="publicAnimal"
+              checked
+            />
+            <MainRadioSpan>국내 공식 입양등록 Animal</MainRadioSpan>
+          </RadioDiv>
+          <RadioDiv>
+            <UploadedAnimalRadioDiv
+              type="radio"
+              name="contact"
+              value="userAnimal"
+            />
+            <MainRadioSpan>유저 입양등록 Animal</MainRadioSpan>
+          </RadioDiv>
+        </RadioinnerDiv>
+
+        <RadioDiv>
+          <MainSearchInput type="text" placeholder="🍳"></MainSearchInput>
+        </RadioDiv>
+      </MainSearchDiv>
 
       <MainContentsContainer>
         {mainData.map((item, index) => {
@@ -64,10 +89,44 @@ function Main() {
     </MainContainer>
   );
 }
+const MainSearchInput = styled.input`
+  width: 16vw;
+  height: 5vh;
+  font-size: 15px;
+  border-radius: 20px;
+  padding-left: 10px;
+  outline: 1px solid gray;
+  font-weight: 600;
+`;
+const RadioinnerDiv = styled.div`
+  display: flex;
+`;
+const RadioDiv = styled.div``;
+const MainRadioSpan = styled.span`
+  font-size: 1.2rem;
+`;
+const UploadedAnimalRadioDiv = styled.input`
+  display: inline-flex;
+  align-items: center;
+`;
 const MainCarouselImgDiv = styled.div`
   img {
     width: 80vw;
     height: 80vh;
+  }
+`;
+const MainSearchDiv = styled.div`
+  padding-top: 30px;
+
+  font-family: "GangwonEduPowerExtraBoldA";
+  width: 80vw;
+  height: 10vh;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10vw;
+  input[type="radio"] {
+    accent-color: black;
   }
 `;
 const MainContainer = styled.div`
