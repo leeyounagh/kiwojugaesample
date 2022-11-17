@@ -15,7 +15,10 @@ function NavBar() {
     <NavBarContainer>
       <a href="/">
         <NavbarHomeIconDiv>
-          <SiDatadog size={33} /> 키워주개
+          <NavLogoDiv>
+            <SiDatadog size={38} />
+          </NavLogoDiv>
+          <NavLogoDiv>키워주개</NavLogoDiv>
         </NavbarHomeIconDiv>
       </a>
       {MenuItems.map((item, index) => {
@@ -42,9 +45,13 @@ const NavBarContainer = styled.div`
     text-decoration: none;
   }
 `;
+const NavLogoDiv = styled.div`
+  margin-right: 5px;
+`;
 const NavbarHomeIconDiv = styled.div`
   font-family: "PyeongChangPeace-Bold";
-  font-size: 1.7rem;
+  font-size: 30px;
+  display: flex;
 `;
 const NavBarItem = styled.div`
   width: 100px;
