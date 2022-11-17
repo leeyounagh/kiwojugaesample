@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { SiNaver } from "react-icons/si";
-import { AiFillFacebook } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
 
 function Login() {
   return (
@@ -38,7 +38,9 @@ function Login() {
           <a href="/finduser">
             <h5>아이디를 잊으셨나요?</h5>
           </a>
-          <h5>비밀번호를 잊으셨나요?</h5>
+          <a href="findpassword">
+            <h5>비밀번호를 잊으셨나요?</h5>
+          </a>
         </SearchDiv>
         <SnsTextDiv>
           <h5>소셜 로그인</h5>
@@ -52,7 +54,7 @@ function Login() {
             <SiNaver size={30} />
           </SnsInnerDiv>
           <SnsInnerDiv>
-            <AiFillFacebook size={30} />
+            <FcGoogle size={30} />
           </SnsInnerDiv>
         </SnsDiv>
       </LoginInnerRightDiv>
