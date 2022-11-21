@@ -2,14 +2,15 @@ import styled from "styled-components";
 import GuideLine from "./Component/GuideLine";
 import Navbar from "./Component/Navbar";
 import { Outlet } from "react-router-dom";
+import BoardSection from "./Component/BoardSection";
 
 const Community = () => {
-
   return (
     <CommunityDiv>
       <Navbar />
-      <GuideLine/>
-      <Outlet/>
+      <GuideLine />
+      <BoardSection></BoardSection>
+      <Outlet />
     </CommunityDiv>
   );
 };

@@ -56,7 +56,7 @@ const Post = () => {
           </SuggestionPostLi>
         </SuggestionPostUl>
       </SuggestionPostDiv>
-      <Search/>
+      <Search />
     </PostDiv>
   );
 };
@@ -66,20 +66,20 @@ const PostDiv = styled.div`
 `;
 
 const SuggestionPostDiv = styled.div`
-  margin-bottom:20px;
+  margin-bottom: 20px;
   width: 100%;
   border: 3px solid green;
   box-sizing: border-box;
 `;
 const SuggestionPostTitle = styled.h2`
   padding-left: 13px;
-`
+`;
 const SuggestionPostUl = styled.ul`
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  margin:0;
-  padding:0 0 10px 0;
+  margin: 0;
+  padding: 0 0 10px 0;
 `;
 const SuggestionPostLi = styled.li`
   a {
@@ -92,7 +92,7 @@ const SuggestionPostLi = styled.li`
       width: 180px;
       height: 120px;
     }
-    span{
+    span {
       width: 100%;
       text-align: center;
     }

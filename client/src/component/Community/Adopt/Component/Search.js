@@ -57,7 +57,7 @@ const WritingBtn = styled.button`
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  a{
+  a {
     color: white;
     text-decoration: none;
   }

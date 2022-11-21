@@ -10,10 +10,11 @@ import UploadDetail from "./component/Upload/UploadDetail";
 import SearchPet from "./component/SearchPet/SearchPet";
 import MyPage from "./component/MyPage/MyPage";
 import FindUser from "./component/Login/FindUser";
-import FindPassword from "./component/Login/FindPassword";
-// import Community from "./component/Community/Community";
-
 import { Routes, Route } from "react-router-dom";
+import Community from "./component/Community/Adopt/Community";
+import MissingCommunity from "./component/Community/missing/Community";
+import Writing from "./component/Community/Adopt/Component/Writing";
+import BoardSection from "./component/Community/Adopt/Component/BoardSection";
 
 function App() {
   return (
@@ -33,12 +34,7 @@ function App() {
         <Route path="/searchpet" element={<SearchPet></SearchPet>}></Route>
         <Route path="/mypage" element={<MyPage></MyPage>}></Route>
         <Route path="/finduser" element={<FindUser></FindUser>}></Route>
-        <Route
-          path="/findpassword"
-          element={<FindPassword></FindPassword>}
-        ></Route>
-
-        {/* 태욱의 추가 */}
+        <Route path="/community" element={<Community></Community>}></Route>
         {/* <Route path="/community/adopt/*" element={<Community></Community>}>
           <Route path="*" element={<BoardSection></BoardSection>}></Route>
           <Route path="Writing" element={<Writing></Writing>}></Route>

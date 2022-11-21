@@ -25,7 +25,7 @@ const GuideLine = () => {
       case "/community/adopt/review":
         setMenuName("후기 게시판");
         break;
-        case "/community/adopt/Writing":
+      case "/community/adopt/Writing":
         setMenuName("글쓰기");
         break;
       default:
