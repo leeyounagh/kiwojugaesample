@@ -37,7 +37,16 @@ function App() {
           path="/findpassword"
           element={<FindPassword></FindPassword>}
         ></Route>
-        <Route path="/community" element={<Community></Community>}></Route>
+
+        {/* 태욱의 추가 */}
+        <Route path="/community/adopt/*" element={<Community></Community>}>
+          <Route path="*" element={<BoardSection></BoardSection>}></Route>
+          <Route path="Writing" element={<Writing></Writing>}></Route>
+        </Route>
+        <Route
+          path="/community/missing/*"
+          element={<MissingCommunity></MissingCommunity>}
+        ></Route>
       </Routes>
     </div>
   );
