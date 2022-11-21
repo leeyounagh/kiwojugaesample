@@ -6,6 +6,7 @@ const MenuItems = [
   { title: "Register", param: "/register" },
   { title: "Login", param: "/login" },
   { title: "입양게시판", param: "/community" },
+  { title: "실종게시판", param: "/missingcommunity" },
   { title: "공지사항", param: "/notice" },
   { title: "MyPage", param: "/mypage" },
 ];

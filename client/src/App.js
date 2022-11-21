@@ -13,8 +13,6 @@ import FindUser from "./component/Login/FindUser";
 import { Routes, Route } from "react-router-dom";
 import Community from "./component/Community/Adopt/Community";
 import MissingCommunity from "./component/Community/missing/Community";
-import Writing from "./component/Community/Adopt/Component/Writing";
-import BoardSection from "./component/Community/Adopt/Component/BoardSection";
 
 function App() {
   return (
@@ -35,6 +33,10 @@ function App() {
         <Route path="/mypage" element={<MyPage></MyPage>}></Route>
         <Route path="/finduser" element={<FindUser></FindUser>}></Route>
         <Route path="/community" element={<Community></Community>}></Route>
+        <Route
+          path="/missingcommunity"
+          element={<MissingCommunity></MissingCommunity>}
+        ></Route>
         {/* <Route path="/community/adopt/*" element={<Community></Community>}>
           <Route path="*" element={<BoardSection></BoardSection>}></Route>
           <Route path="Writing" element={<Writing></Writing>}></Route>
