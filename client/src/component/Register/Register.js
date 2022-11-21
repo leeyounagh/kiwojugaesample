@@ -63,6 +63,7 @@ const RegisterDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10vh;
 `;
 const RegisterSubDiv = styled.div``;
 

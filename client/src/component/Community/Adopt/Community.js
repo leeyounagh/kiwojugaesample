@@ -20,6 +20,7 @@ const CommunityDiv = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: 1440px;
+  margin-bottom: 10vh;
 `;
 
 export default Community;
