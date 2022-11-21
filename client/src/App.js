@@ -11,7 +11,7 @@ import SearchPet from "./component/SearchPet/SearchPet";
 import MyPage from "./component/MyPage/MyPage";
 import FindUser from "./component/Login/FindUser";
 import FindPassword from "./component/Login/FindPassword";
-import Community from "./component/Community/Community";
+// import Community from "./component/Community/Community";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -39,14 +39,14 @@ function App() {
         ></Route>
 
         {/* 태욱의 추가 */}
-        <Route path="/community/adopt/*" element={<Community></Community>}>
+        {/* <Route path="/community/adopt/*" element={<Community></Community>}>
           <Route path="*" element={<BoardSection></BoardSection>}></Route>
           <Route path="Writing" element={<Writing></Writing>}></Route>
         </Route>
         <Route
           path="/community/missing/*"
           element={<MissingCommunity></MissingCommunity>}
-        ></Route>
+        ></Route> */}
       </Routes>
     </div>
   );
