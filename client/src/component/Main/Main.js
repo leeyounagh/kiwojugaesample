@@ -3,7 +3,11 @@ import styled from "styled-components";
 import axios from "axios";
 import Slider from "react-slick";
 
-const mainUrl = `http://api.visitjeju.net/vsjApi/contents/searchList?apiKey=sbrr93ynwcggx6br&locale=kr&category=c3`;
+const encodeKey =
+  "vvTpc9iWL1igyA28eXua3jf25bu6ismI0srcgDvGfNh1kJtI6MKBysAOJYLInST8Pkuioaj%2FHyUnluD%2B0rKc3g%3D%3D";
+const mainUrl = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?bgnde=20211201&endde=20211231&pageNo=1&numOfRows=100&_type=json&serviceKey=${encodeKey}`;
+// git config 파일에 인증키 추가해야됨
+// 제공되는 pageNo은 4까지라함
 
 function Main() {
   // 테스트 데이터 정의
@@ -21,14 +25,13 @@ function Main() {
     axios
       .get(mainUrl)
       .then((response) => {
-        setMainData(response.data.items);
-        console.log(mainData[0]);
+        setMainData(response.data.response.body.items.item);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-
+  console.log("데이타", mainData);
   return (
     <MainContainer>
       <MainCarouselDiv>
@@ -77,7 +80,7 @@ function Main() {
               <img
                 key={index}
                 alt={item.title}
-                src={item.repPhoto.photoid.thumbnailpath}
+                src={item.filename}
                 width="290px"
                 height="290px"
                 style={{ marginRight: "30px" }}
