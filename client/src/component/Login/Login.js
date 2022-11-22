@@ -30,21 +30,15 @@ function Login() {
           <img src="귀여워.png" alt="고양이" width="200px" height="200px"></img>
         </CatDiv>
         <LoginRightRegisterDiv>
-          <h4> 계정이 없으신가요?</h4>
+          <RegisterText>계정이 없으신가요?</RegisterText>
 
           <RegisterButton>Register</RegisterButton>
         </LoginRightRegisterDiv>
         <SearchDiv>
-          <a href="/finduser">
-            <h5>아이디를 잊으셨나요?</h5>
-          </a>
-          <a href="findpassword">
-            <h5>비밀번호를 잊으셨나요?</h5>
-          </a>
+          <a href="/finduser">아이디를 잊으셨나요?</a>
+          <a href="findpassword">비밀번호를 잊으셨나요?</a>
         </SearchDiv>
-        <SnsTextDiv>
-          <h5>소셜 로그인</h5>
-        </SnsTextDiv>
+        <SnsTextDiv>소셜 로그인</SnsTextDiv>
 
         <SnsDiv>
           <SnsInnerDiv>
@@ -64,18 +58,22 @@ function Login() {
   );
 }
 const LoginContainer = styled.div`
-  width: 60%;
+  width: 70%;
   margin-top: 50px;
   border-radius: 10px;
   padding: 50px;
   background-color: #bee9b4;
-  height: 60vh;
-  margin-left: 18vw;
+  height: 75vh;
+  margin-left: 15vw;
   font-family: "GangwonEduPowerExtraBoldA";
+`;
+const RegisterText = styled.div`
+  font-size: 1.5rem;
 `;
 const SnsTextDiv = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 15px;
 `;
 const SnsInnerDiv = styled.div`
   margin-right: 5px;
@@ -87,7 +85,7 @@ const SnsDiv = styled.div`
 const CatDiv = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 7vh;
+  // margin-top: 7vh;
 `;
 const SearchDiv = styled.div`
   display: flex;
@@ -106,6 +104,7 @@ const LoginText = styled.h1``;
 const LoginRightRegisterDiv = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 30px;
   height: 50px;
 `;
 const LoginIdInput = styled.input`
@@ -148,10 +147,11 @@ const RegisterButton = styled.button`
   height: 5vh;
   background-color: white;
   border-radius: 50px;
-  margin-top: 2vh;
+  margin-bottom: 15px;
   margin-left: 1vw;
   font-family: "GangwonEduPowerExtraBoldA";
   padding-top: 1vh;
+  font-size: rem;
   &:focus {
     outline: none;
   }
@@ -168,16 +168,18 @@ const PasswordInput = styled.input`
 `;
 const LoginInnerRightDiv = styled.div`
   float: right;
+  padding-top: 30px;
   img {
     opacity: 0.8;
   }
 `;
 const LoginInnerLeftDiv = styled.div`
-  width: 40vw;
+  width: 38vw;
   height: 60vh;
   background-color: white;
   border-radius: 10px;
   float: left;
+  padding-top: 15vh;
 `;
 
 const LoginContents = styled.div`

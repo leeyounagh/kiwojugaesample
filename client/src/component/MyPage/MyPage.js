@@ -8,25 +8,23 @@ import { GiDogHouse } from "react-icons/gi";
 const MyPage = () => {
   return (
     <div>
-      <MyPageTitleDiv>
-        <h2>MyPage</h2>
-      </MyPageTitleDiv>
+      <MyPageTitleDiv>MyPage</MyPageTitleDiv>
       <MyPageMainDiv>
         <MyPageMainInnerDiv>
           <BsPersonFill size={60}></BsPersonFill>
-          <h3>정보수정</h3>
+          <h5>정보수정</h5>
         </MyPageMainInnerDiv>
         <MyPageMainInnerDiv>
           <FaDog size={60}></FaDog>
-          <h3>내 입양 등록보기</h3>
+          <h5>내 입양 등록보기</h5>
         </MyPageMainInnerDiv>
         <MyPageMainInnerDiv>
           <FaCat size={60}></FaCat>
-          <h3>내 입양 신청 보기</h3>
+          <h5>내 입양 신청 보기</h5>
         </MyPageMainInnerDiv>
         <MyPageMainInnerDiv>
           <GiDogHouse size={60}></GiDogHouse>
-          <h3>내 후기 보기</h3>
+          <h5>내 후기 보기</h5>
         </MyPageMainInnerDiv>
       </MyPageMainDiv>
     </div>
@@ -35,8 +33,10 @@ const MyPage = () => {
 
 const MyPageTitleDiv = styled.div`
   padding-left: 10vw;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 14vh;
+  font-weight: 600;
+  margin-bottom: 10px;
 `;
 const MyPageMainInnerDiv = styled.div`
   width: 20vw;
@@ -52,6 +52,9 @@ const MyPageMainDiv = styled.div`
   background: #fcfcfc;
   display: flex;
   font-family: "GangwonEduPowerExtraBoldA";
+  h5 {
+    margin-top: 15px;
+  }
 `;
 
 export default MyPage;

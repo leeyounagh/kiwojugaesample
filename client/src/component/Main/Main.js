@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import Slider from "react-slick";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 const encodeKey =
   "vvTpc9iWL1igyA28eXua3jf25bu6ismI0srcgDvGfNh1kJtI6MKBysAOJYLInST8Pkuioaj%2FHyUnluD%2B0rKc3g%3D%3D";
@@ -74,20 +77,34 @@ function Main() {
       </MainSearchDiv>
 
       <MainContentsContainer>
-        {mainData.map((item, index) => {
-          return (
-            <>
-              <img
-                key={index}
-                alt={item.title}
-                src={item.filename}
-                width="290px"
-                height="290px"
-                style={{ marginRight: "30px" }}
-              ></img>
-            </>
-          );
-        })}
+        <Row xs={1} md={6} className="g-4">
+          {mainData.map((item, index) => {
+            return (
+              <>
+                <Col>
+                  <Card>
+                    <Card.Img
+                      style={{
+                        width: "70%",
+                        height: "90%",
+                        marginLeft: "2vw",
+                        marginTop: "2vh",
+                      }}
+                      variant="top"
+                      src={item.filename}
+                    />
+                    <Card.Body>
+                      <Card.Title>{item.kindCd}</Card.Title>
+                      <Card.Text>보호소:{item.careNm}</Card.Text>
+                      <Card.Text>특징:{item.specialMark}</Card.Text>
+                      <Card.Text>몸무게:{item.weight}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </>
+            );
+          })}
+        </Row>
       </MainContentsContainer>
     </MainContainer>
   );
@@ -142,7 +159,9 @@ const MainCarouselDiv = styled.div`
   margin-bottom: 100px;
 `;
 const MainContentsContainer = styled.div`
-  margin-left: 10vw;
+  margin-left: 3vw;
+  margin-top: 5vh;
+  font-family: "GangwonEduPowerExtraBoldA";
 `;
 
 export default Main;

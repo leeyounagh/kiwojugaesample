@@ -48,12 +48,12 @@ function Notice() {
 
 const NoticeContainer = styled.div`
   background-color: #bee9b4;
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
   left: 15vw;
   border-radius: 10px;
   width: 70vw;
-  height: 90vh;
+  height: 100vh;
   padding-top: 50px;
   margin-bottom: 80px;
   font-family: "GangwonEduPowerExtraBoldA";

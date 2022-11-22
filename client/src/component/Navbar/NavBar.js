@@ -36,7 +36,7 @@ function NavBar() {
 const NavBarContainer = styled.div`
   padding: 10px;
   width: 100%;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid lightgray;
