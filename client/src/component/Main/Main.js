@@ -94,10 +94,18 @@ function Main() {
                       src={item.filename}
                     />
                     <Card.Body>
-                      <Card.Title>{item.kindCd}</Card.Title>
-                      <Card.Text>보호소:{item.careNm}</Card.Text>
-                      <Card.Text>특징:{item.specialMark}</Card.Text>
-                      <Card.Text>몸무게:{item.weight}</Card.Text>
+                      <Card.Title style={{ textAlign: "center" }}>
+                        {item.kindCd}
+                      </Card.Title>
+                      <Card.Text style={{ textAlign: "center" }}>
+                        보호소:{item.careNm}
+                      </Card.Text>
+                      <Card.Text style={{ textAlign: "center" }}>
+                        특징:{item.specialMark}
+                      </Card.Text>
+                      <Card.Text style={{ textAlign: "center" }}>
+                        몸무게:{item.weight}
+                      </Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>
