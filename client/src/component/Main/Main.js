@@ -77,7 +77,7 @@ function Main() {
       </MainSearchDiv>
 
       <MainContentsContainer>
-        <Row xs={1} md={6} className="g-4">
+        <Row xs={1} md={4} className="g-4">
           {mainData.map((item, index) => {
             return (
               <>
@@ -140,7 +140,7 @@ const MainSearchDiv = styled.div`
   font-family: "GangwonEduPowerExtraBoldA";
   width: 80vw;
   height: 10vh;
-  margin-left: 10vw;
+  margin-left: 15vw;
   display: flex;
   justify-content: space-between;
   padding-right: 10vw;
@@ -159,7 +159,8 @@ const MainCarouselDiv = styled.div`
   margin-bottom: 100px;
 `;
 const MainContentsContainer = styled.div`
-  margin-left: 3vw;
+  width: 70vw;
+  margin-left: 15vw;
   margin-top: 5vh;
   font-family: "GangwonEduPowerExtraBoldA";
 `;
